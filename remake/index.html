@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" , initial-scale=1.0 />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a114000329.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+   
+    
+    
+    
+    
+    <header>
+        <div class="logo">Oscar Andersson</div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="om.html">Om mig</a></li>
+                <li class="sub-menu"><a href="#">Uppgifter</a>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    
+                </ul>
+                </li>
+                <li><a href="#">Social</a>
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+
+                    </ul>
+                
+                
+                </li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Admin</a></li>
+
+            </ul>
+
+        </nav>
+        <div class="menu-toggle"><i class="fa-sharp fa-solid fa-bars"></i></div>
+
+
+
+
+    </header>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {
+                $('nav').toggleClass('active')
+
+            })
+            $('ul li').click(function(){
+                
+                $(this).toggleClass('active');
+
+            })
+        })
+    </script>
+
+</body>
+</html>
